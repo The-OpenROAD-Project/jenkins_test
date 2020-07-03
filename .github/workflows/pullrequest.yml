@@ -19,3 +19,6 @@ jobs:
           branch: staging
           base: master
           labels: automerge
+          title: Merge branch 'staging' into 'master'
+          body: |
+            PR to update master branch (generated automatically by Github Actions)
