@@ -1,7 +1,10 @@
 name: Merge openroad branch into master branch
 on:
-  schedule:
-    - cron: '* * * * *'
+  # This is just to disable the cron job
+  push:
+    tags: BOGUS_TAG
+  #schedule:
+  #  - cron: '* * * * *'
 jobs:
   pullRequest:
     runs-on: ubuntu-latest
